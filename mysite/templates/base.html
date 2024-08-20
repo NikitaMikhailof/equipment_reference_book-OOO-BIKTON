@@ -1,0 +1,46 @@
+{% load static %}
+{% load equipment_tags %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{% endblock title %}</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link type="text/css" href="{% static 'equipment/css/styles.css' %}" rel="stylesheet" />
+</head>
+<body>
+<div class="sidenav">
+    <a><img src="{% static 'equipment/images/home.png' %}" class="home-img"></a>
+    <a><img src="{% static 'equipment/images/login.png' %}" class="login-img"></a>
+    <br>
+    {% get_categories as categories %}
+    {% for cat in categories %}
+        <a href="#">{{ cat }}</a>
+    {% endfor %}
+    <br><br>     
+    <button class="dropdown-btn">теги #
+    <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        {% get_tags as tags %}
+        {% for tag in tags %}
+            <a href="#">{{ tag }}</a>
+        {% endfor %}
+    </div>
+    <br><br>
+    <form class="example" action="">
+        <input type="text" placeholder="Поиск.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>
+<div class="content">
+    {% block content %}
+
+    {% endblock content %}
+</div>
+</body> 
+<script src="{% static 'equipment/js/script.js' %}"></script>
+</html> 

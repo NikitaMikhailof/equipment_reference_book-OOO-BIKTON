@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная страница{% endblock title %}
+
+{% block content %}
+    {% for eq in equip %}
+        <p>{{ eq.title }}</p>
+        <p>{{ eq.place }}</p>
+        <p>{{ eq.description }}</p>
+        <p>{{ eq.cat }}</p>
+        <br><br>
+    {% endfor %}
+   
+{% endblock content %}
+
+
