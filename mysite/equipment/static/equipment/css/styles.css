@@ -24,7 +24,7 @@
   
   /* Стили ссылок боковой панели и кнопки выпадающего подменю */
   .sidenav a, .dropdown-btn {
-    padding: 6px 8px 6px 16px;
+    padding: 5px 20px ;
     text-decoration: none;
     font-size: 20px;
     color: #818181;
@@ -93,24 +93,28 @@
 
 /* Стили поля поиска */
 form.example input[type=text] {
-  padding: 10px;
+  padding: 10px 10px 10px 40px;
   font-size: 15px;
-  float: left;
+  display: inline-block;
   width: 80%;
   background: #f8f5f5;
   
 }
 
+
+
+
 /* Стили кнопки отправки данных */
 form.example button {
-  float: left;
-  width: 15%;
-  padding: 11px;
-  background: green;
-  color: white;
-  font-size: 15px;
-  border-left: none; /* Удаляем двойную рамку */
-  cursor: pointer;
+padding: 10px 10px 10px 10px;
+display: inline-block;
+width: 15%;
+padding: 11px;
+background: green;
+color: white;
+font-size: 15px;
+border-left: none; /* Удаляем двойную рамку */
+cursor: pointer;
 }
 
 form.example button:hover {
@@ -124,3 +128,87 @@ form.example::after {
   display: table;
 }
 
+
+
+
+/* БЛОК КОНТЕНТ */
+/* БЛОК КОНТЕНТ */
+/* БЛОК КОНТЕНТ */
+
+
+
+.total-sum-equipment { 
+    padding: 10px 10px 10px 40px;
+    display: inline-block;
+    height: 20px;
+    color: #dbcfcf;
+    font-size:large;
+}    
+
+img {width: 200px; height: 200px;}
+
+img.img-article-left {
+	max-width: 200px;
+	height: 230px;
+	float: left;
+    padding: 10px 30px 5px 20px; 
+    
+} 
+
+.container-post-not-even {
+
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    width: 500px;
+    height: 280px;
+    display: inline-block;
+    background-color: #b8a5a5be; 
+    border-radius: 20px;
+    font-size: 17px;
+}
+
+.container-post-even {
+
+    margin-top: 20px;
+    float: right; 
+    margin-right: 20px;
+    width: 500px;
+    height: 280px;
+    display: inline-block;
+    background-color: #dbcfcf; 
+    border-radius: 20px;
+    font-size: 17px;
+}
+
+.button-view-post {
+    display: block;
+    border-radius: 5px;
+    background: green;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .post-text {
+    padding: 5px 10px 5px 5px;
+    width: 300px;
+    height: 250px; 
+    display: inline-block;
+  }
+
+/* Стили при наведении курсора мыши */
+.container-post-not-even a:hover {
+    background-color: #0a4e0a;
+  }
+
+.container-post-even a:hover {
+    background-color: #0a4e0a;
+  }
+
+
+/* КОНЕЦ БЛОКФ КОНТЕНТ */
+/* КОНЕЦ БЛОКФ КОНТЕНТ */
+/* КОНЕЦ БЛОКФ КОНТЕНТ */

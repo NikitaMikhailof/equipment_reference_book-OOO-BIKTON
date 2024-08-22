@@ -3,10 +3,10 @@ from . models import Category, Equipment
 
 
 def index(request):
-    equip = Equipment.objects.all()
+    posts = Equipment.objects.all()
     data = {'title': 'Главная страница',
                'cats': Category.objects.all(),
-               'equip': equip}
+               'posts': posts}
     return render(request, 'equipment/index.html', context=data)
 
 

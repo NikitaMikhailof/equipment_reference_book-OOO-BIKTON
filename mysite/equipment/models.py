@@ -1,7 +1,7 @@
 from django.db import models
 from django.urls import reverse
 from taggit.managers import TaggableManager
-
+from django.db.models import ImageField
 
 class Category(models.Model):
     title = models.CharField(max_length=255, verbose_name='название')
@@ -17,6 +17,7 @@ class Category(models.Model):
 
 
 class Equipment(models.Model):
+
     tags = TaggableManager(verbose_name='теги')
 
     title = models.CharField(max_length=255, verbose_name='название')
@@ -26,6 +27,7 @@ class Equipment(models.Model):
     time_update = models.DateTimeField(auto_now=True, verbose_name='дата обновления') 
     slug = models.SlugField(max_length=255, db_index=True, unique=True)     
     cat = models.ForeignKey('Category', on_delete=models.PROTECT, null=True, related_name='equip', verbose_name='категория')
+    photo = models.ImageField(upload_to="photos/%Y/%m/%d/", default=None, blank=True, null=True, verbose_name="Фото")
     
     class Meta:
         verbose_name = 'Оборудование' 

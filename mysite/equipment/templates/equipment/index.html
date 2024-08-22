@@ -2,15 +2,24 @@
 
 {% block title %}Главная страница{% endblock title %}
 
-{% block content %}
-    {% for eq in equip %}
-        <p>{{ eq.title }}</p>
-        <p>{{ eq.place }}</p>
-        <p>{{ eq.description }}</p>
-        <p>{{ eq.cat }}</p>
-        <br><br>
-    {% endfor %}
-   
-{% endblock content %}
+{% block sidebar %}
+<p class="total-sum-equipment">Всего позиций: {{ posts.count }}</p>
+{% endblock sidebar %}
 
+{% block content %}
+    <!-- <div class="total-sum-equipment"></div> -->
+    {% for post in posts %}
+    {% if post.photo %}
+        <div class="{% cycle 'container-post-not-even' 'container-post-even' %}">
+            <p><img class="img-article-left" src="{{post.photo.url}}"></p>
+            <div class="post-text">
+                <p><strong>наименование: </strong>{{ post.title }}</p>
+                <p><strong>место установки: </strong>{{ post.place }}</p>
+                <p><strong>описание: </strong>{{ post.description|truncatewords:15 }}</p> 
+            </div>
+            <a href="#" class="button-view-post">Просмотр</a>
+        </div>
+    {% endif %}    
+    {% endfor %}
+{% endblock content %}
 
