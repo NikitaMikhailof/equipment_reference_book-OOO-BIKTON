@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-{{title}}
+{{ title }}
 {% endblock title %}
 
 {% block sidebar %}
@@ -24,6 +24,5 @@
     {% endif %}    
     {% endfor %}
     <br><br>
-    {% include "equipment/pagination.html" with page=page_obj %}
+    {% include "equipment/pagination.html" with page=posts %}    
 {% endblock content %}
-

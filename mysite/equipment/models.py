@@ -4,7 +4,7 @@ from taggit.managers import TaggableManager
 from django.db.models import ImageField
 
 class Category(models.Model):
-    title = models.CharField(max_length=255, verbose_name='название')
+    title = models.CharField(max_length=255, db_index=True, verbose_name='название')
     slug = models.SlugField(max_length=255, db_index=True, unique=True)        
 
     class Meta:
@@ -13,6 +13,7 @@ class Category(models.Model):
     
     def __str__(self):
         return self.title
+
 
 
 
@@ -41,6 +42,6 @@ class Equipment(models.Model):
         return self.title     
     
     def get_absolute_url(self):
-        return reverse('equipment', kwargs={'equipment_slug':self.slug})
+        return reverse('post', kwargs={'post_slug':self.slug})
     
 

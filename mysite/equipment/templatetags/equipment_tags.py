@@ -1,7 +1,6 @@
 from django import template
 import equipment.views as views
 from equipment.models import Category, Equipment
-
 from taggit.models import Tag
 
 

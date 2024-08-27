@@ -103,7 +103,6 @@ form.example input[type=text] {
 
 
 
-
 /* Стили кнопки отправки данных */
 form.example button {
 padding: 10px 10px 10px 10px;
@@ -132,9 +131,6 @@ form.example::after {
 
 
 /* БЛОК КОНТЕНТ */
-/* БЛОК КОНТЕНТ */
-/* БЛОК КОНТЕНТ */
-
 
 
 .total-sum-equipment { 
@@ -209,6 +205,55 @@ img.img-article-left {
   }
 
 
-/* КОНЕЦ БЛОКФ КОНТЕНТ */
-/* КОНЕЦ БЛОКФ КОНТЕНТ */
-/* КОНЕЦ БЛОКФ КОНТЕНТ */
+/* КОНЕЦ БЛОКА КОНТЕНТ */
+
+
+
+
+/* POST.HTML */
+
+.show-img {
+    width: 500px; height: 500px;
+}
+
+.button-main-page {
+    display: block;
+    border-radius: 5px;
+    background: green;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+}
+/* КОНЕЦ POST.HTML */
+
+  
+  .previous {
+    background-color: #6365ce;
+    color: rgb(245, 240, 240);
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 10px;
+  }
+  
+  .next {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 10px;
+  }
+  
+
+
+  .next:hover {
+    background:rgb(4, 72, 4);
+  }
+
+  .previous:hover {
+    background:rgb(52, 18, 145);
+  }
