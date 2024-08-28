@@ -9,12 +9,12 @@ admin.site.site_header = 'Панель администрирования'
 @admin.register(Equipment)
 class EquipmentAdmin(admin.ModelAdmin):
     fields = ['title', 'slug', 'place', 'description', 'cat', 'tags', 'photo']
-    # readonly_fields = ['photo']
     prepopulated_fields = {'slug': ('title',)}
     list_display = ('title', 'place', 'description', 'time_create', 'time_update', 'slug', 'post_photo')
     ordering = ('-time_create', 'title')
     list_per_page = 5
-    search_fields = ['title'] 
+    search_fields = ['title']  
+    
 
     @admin.display(description="Изображение")
     def post_photo(self, equipment: Equipment):

@@ -3,6 +3,7 @@ from django.urls import reverse
 from taggit.managers import TaggableManager
 from django.db.models import ImageField
 
+
 class Category(models.Model):
     title = models.CharField(max_length=255, db_index=True, verbose_name='название')
     slug = models.SlugField(max_length=255, db_index=True, unique=True)        
@@ -13,8 +14,6 @@ class Category(models.Model):
     
     def __str__(self):
         return self.title
-
-
 
 
 class Equipment(models.Model):
@@ -44,4 +43,20 @@ class Equipment(models.Model):
     def get_absolute_url(self):
         return reverse('post', kwargs={'post_slug':self.slug})
     
+
+
+# class Comment(models.Model):
+#     post = models.ForeignKey('Equipment', on_delete=models.CASCADE,related_name='comments')
+#     user = models.ForeignKey('')
+#     body = models.TextField()
+#     created = models.DateTimeField(auto_now_add=True)
+
+#     class Meta:
+#         ordering = ['created']
+#         indexes = [ models.Index(fields=['created'])]
+
+#     def __str__(self):
+#         return f'Comment by {self.name} on {self.post}'    
+
+
 

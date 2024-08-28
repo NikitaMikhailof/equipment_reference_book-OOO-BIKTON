@@ -1,0 +1,1711 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-08-19T08:25:38.875Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Equipment object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-08-19T08:49:33.714Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "клапан обратный",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-08-19T08:49:50.673Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Задвижка",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-08-19T08:54:20.973Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Клапан обратный",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-08-19T09:01:56.982Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "насосы",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-08-19T09:02:08.127Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "КИПиА",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-08-19T09:02:18.013Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Сосуды под давлением",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-08-19T09:02:29.527Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "сосуды под давлением",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-08-19T09:02:40.893Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "запорная арматура",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-08-19T09:02:50.117Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "клапана",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-08-19T09:04:10.053Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "вспомогательное оборудование",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2024-08-19T09:04:43.903Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "котлы",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2024-08-19T09:05:26.037Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "газовое хозяйство",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2024-08-19T09:09:04.559Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "насосы",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2024-08-19T09:10:13.030Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "датчики",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\", \"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2024-08-19T09:10:21.178Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "сосуды под давлением",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2024-08-19T09:10:29.624Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "запорная арматура",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2024-08-19T09:10:40.641Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "клапана",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2024-08-19T09:10:45.086Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "вспомогательное оборудование",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2024-08-19T09:10:50.775Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "котлы",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2024-08-19T09:10:55.411Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "газовое хозяйство",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2024-08-20T08:57:59.580Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Клапан обратный",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cat\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2024-08-20T08:58:06.248Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Задвижка",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cat\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2024-08-20T09:12:10.109Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "котельная",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2024-08-20T09:12:33.719Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "автоклавы",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2024-08-20T09:13:07.893Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "газовое хозяйство",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2024-08-20T09:13:27.220Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "хво",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2024-08-20T09:14:11.263Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "вспомогательное оборудование",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2024-08-20T09:15:42.181Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "газовое хозяйство",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2024-08-20T09:15:46.599Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "вспомогательное оборудование",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2024-08-20T09:16:34.289Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "автоклавы",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"tagged item\", \"object\": \"None tagged with \\u0430\\u0432\\u0442\\u043e\\u043a\\u043b\\u0430\\u0432\\u044b\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2024-08-20T09:19:03.938Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Клапан обратный",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2024-08-20T09:19:11.302Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Задвижка",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2024-08-22T18:00:25.990Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Клапан обратный",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2024-08-22T18:28:27.403Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Задвижка",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2024-08-22T18:43:52.710Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Клапан обратный",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2024-08-22T18:48:48.565Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Задвижка",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2024-08-22T18:56:37.655Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Задвижка",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2024-08-22T18:57:27.808Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Задвижка",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2024-08-22T19:01:39.180Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Преобразователь давления",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2024-08-22T21:45:24.310Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Клапан предохранительный",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2024-08-22T21:49:02.379Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Котел № 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2024-08-22T21:53:44.348Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Клапан управления",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2024-08-22T21:54:49.654Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Клапан Fleck 3150",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2024-08-27T08:41:22.885Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Котел № 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2024-08-27T08:41:40.061Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Котел № 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2024-08-27T08:42:26.637Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Клапан Fleck 3150 (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2024-08-27T08:42:56.208Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Клапан Fleck 3150 (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2024-08-27T08:43:20.430Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Клапан Fleck 3150 (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2024-08-27T08:43:33.083Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Клапан Fleck 3150 (2)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0435\\u0441\\u0442\\u043e \\u0443\\u0441\\u0442\\u0430\\u043d\\u043e\\u0432\\u043a\\u0438\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2024-08-27T08:56:21.099Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "ХВО",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2024-08-27T08:56:40.584Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Клапан Fleck 3150 (2)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u0433\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2024-08-27T08:56:48.803Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Клапан Fleck 3150 (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u0433\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2024-08-27T09:02:18.189Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Калапан газовый (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2024-08-27T09:03:42.648Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Калапан газовый (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u0433\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2024-08-27T09:03:59.480Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "газовое",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2024-08-27T09:04:04.405Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "хозяйство",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2024-08-27T09:04:12.981Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "оборудование",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2024-08-27T09:06:09.416Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Калапан газовый (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u0433\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2024-08-27T09:06:55.524Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "11",
+    "object_repr": "хозяйство",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2024-08-27T09:07:00.998Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "газовое",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2024-08-27T09:07:17.385Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "газовое хозяйство",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2024-08-27T09:07:35.603Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Калапан газовый (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u0433\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2024-08-27T09:07:58.110Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "13",
+    "object_repr": "хозяйство",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2024-08-27T09:08:04.783Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "12",
+    "object_repr": "газовое",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2024-08-27T09:08:29.118Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "газовое хозяйство",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"tagged item\", \"object\": \"\\u041a\\u0430\\u043b\\u0430\\u043f\\u0430\\u043d \\u0433\\u0430\\u0437\\u043e\\u0432\\u044b\\u0439 (1) tagged with \\u0433\\u0430\\u0437\\u043e\\u0432\\u043e\\u0435 \\u0445\\u043e\\u0437\\u044f\\u0439\\u0441\\u0442\\u0432\\u043e\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2024-08-27T10:43:32.454Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Клапан предохранительный (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2024-08-27T10:44:03.535Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Клапан предохранительный (2)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add equipment",
+    "content_type": 7,
+    "codename": "add_equipment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change equipment",
+    "content_type": 7,
+    "codename": "change_equipment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete equipment",
+    "content_type": 7,
+    "codename": "delete_equipment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view equipment",
+    "content_type": 7,
+    "codename": "view_equipment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Категории",
+    "content_type": 8,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Категории",
+    "content_type": 8,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Категории",
+    "content_type": 8,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Категории",
+    "content_type": 8,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add tag",
+    "content_type": 9,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change tag",
+    "content_type": 9,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete tag",
+    "content_type": 9,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view tag",
+    "content_type": 9,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add tagged item",
+    "content_type": 10,
+    "codename": "add_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change tagged item",
+    "content_type": 10,
+    "codename": "change_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete tagged item",
+    "content_type": 10,
+    "codename": "delete_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view tagged item",
+    "content_type": 10,
+    "codename": "view_taggeditem"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$GaNhSNw3QKfujRs436vc1O$E+gJHPfsbJqd/uTX/IW5xz9NVKmagnOz7Cz52nGPUWE=",
+    "last_login": "2024-08-27T10:41:55.647Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "mikhailoffnikita2016@yandex.ru",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-08-19T08:22:11.988Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "equipment",
+    "model": "equipment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "equipment",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "taggit",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "taggit",
+    "model": "taggeditem"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "axttvksyh0wd58ry6v9u9jxwc3h1d5wk",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pABCoJL9z1DMzCDVA0kpV0Z765NutDtf-_9l5hwW8u0dV6mmcRFKHH63SKmB9cd0B3rrcnU6rrMUe6KPGiXYyN-Xg_376BgL98a4ZwyaBsZWXGABKQ0Z81ArJTLEXRgGsg747K1hMF7st4Y42PIgxXvDwDdODM:1site7:r9ccBWW5gpZRTjO1BXMHWCZ3PaCxEV-PY0VU4CUc2k4",
+    "expire_date": "2024-09-10T10:41:55.657Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "j3rl8cvwhb0equeaikgcwm9bc52bmgdb",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pABCoJL9z1DMzCDVA0kpV0Z765NutDtf-_9l5hwW8u0dV6mmcRFKHH63SKmB9cd0B3rrcnU6rrMUe6KPGiXYyN-Xg_376BgL98a4ZwyaBsZWXGABKQ0Z81ArJTLEXRgGsg747K1hMF7st4Y42PIgxXvDwDdODM:1sirkc:RN9QlvKTP4wKJGQ0brBFRCYrMFOZ9xyjIXsvzXLpEYY",
+    "expire_date": "2024-09-10T08:40:30.440Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "sajd07y6zdprseme9xx3nmyz9ja6g7v5",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pABCoJL9z1DMzCDVA0kpV0Z765NutDtf-_9l5hwW8u0dV6mmcRFKHH63SKmB9cd0B3rrcnU6rrMUe6KPGiXYyN-Xg_376BgL98a4ZwyaBsZWXGABKQ0Z81ArJTLEXRgGsg747K1hMF7st4Y42PIgxXvDwDdODM:1shFaf:ExafwTiSk3YwLh2smnpVHwgSnzeysY7lhWudviAxJqg",
+    "expire_date": "2024-09-05T21:43:33.977Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "wq1rz17x9mhtc31jc4dd4rs497bhlnqb",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pABCoJL9z1DMzCDVA0kpV0Z765NutDtf-_9l5hwW8u0dV6mmcRFKHH63SKmB9cd0B3rrcnU6rrMUe6KPGiXYyN-Xg_376BgL98a4ZwyaBsZWXGABKQ0Z81ArJTLEXRgGsg747K1hMF7st4Y42PIgxXvDwDdODM:1shDnr:c9Xr672_TLBTnmOOafoHfjee6k_43eEydDO0aQIddxQ",
+    "expire_date": "2024-09-05T19:49:03.581Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ztvt9e2llrwpy5bau66y6uo6h39c20tm",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pABCoJL9z1DMzCDVA0kpV0Z765NutDtf-_9l5hwW8u0dV6mmcRFKHH63SKmB9cd0B3rrcnU6rrMUe6KPGiXYyN-Xg_376BgL98a4ZwyaBsZWXGABKQ0Z81ArJTLEXRgGsg747K1hMF7st4Y42PIgxXvDwDdODM:1sfxew:wbSt3mhP2m4D3bGUl7Ap2j2hQAQJ46Xx1In73w9J9p8",
+    "expire_date": "2024-09-02T08:22:38.720Z"
+  }
+},
+{
+  "model": "equipment.category",
+  "pk": 1,
+  "fields": {
+    "title": "насосы",
+    "slug": "nasosy"
+  }
+},
+{
+  "model": "equipment.category",
+  "pk": 2,
+  "fields": {
+    "title": "датчики",
+    "slug": "datchiki"
+  }
+},
+{
+  "model": "equipment.category",
+  "pk": 3,
+  "fields": {
+    "title": "сосуды под давлением",
+    "slug": "sosudy-pod-davleniem"
+  }
+},
+{
+  "model": "equipment.category",
+  "pk": 4,
+  "fields": {
+    "title": "запорная арматура",
+    "slug": "zapornaya-armatura"
+  }
+},
+{
+  "model": "equipment.category",
+  "pk": 5,
+  "fields": {
+    "title": "клапана",
+    "slug": "klapana"
+  }
+},
+{
+  "model": "equipment.category",
+  "pk": 7,
+  "fields": {
+    "title": "котлы",
+    "slug": "kotly"
+  }
+},
+{
+  "model": "equipment.equipment",
+  "pk": 2,
+  "fields": {
+    "title": "Задвижка",
+    "place": "Котел № 1",
+    "description": "Задвижка Ду 40 установлена на дренажной линии котла № 1.\r\nДопустимое давление 16 кгс/см2.",
+    "time_create": "2024-08-19T08:25:38.866Z",
+    "time_update": "2024-08-22T18:57:27.800Z",
+    "slug": "zadvishka-1",
+    "cat": 4,
+    "photo": "photos/2024/08/22/задвижка_ду_40.jpg"
+  }
+},
+{
+  "model": "equipment.equipment",
+  "pk": 3,
+  "fields": {
+    "title": "Клапан обратный",
+    "place": "Автоклав № 2",
+    "description": "Обратный клапан Ду 40 установлен на конденсатной линии автоклава",
+    "time_create": "2024-08-19T08:54:20.968Z",
+    "time_update": "2024-08-22T18:43:52.686Z",
+    "slug": "klapan-obratnyj",
+    "cat": 5,
+    "photo": "photos/2024/08/22/клапан_обратный_ду_40.jpeg"
+  }
+},
+{
+  "model": "equipment.equipment",
+  "pk": 4,
+  "fields": {
+    "title": "Преобразователь давления",
+    "place": "Котел № 1",
+    "description": "Преобразователь давления WIKA.\r\nПредел по давлению 0....250 mbar\r\nпредел по току 0.....20mA\r\nпредел по напряжению DC 10.....30V",
+    "time_create": "2024-08-22T19:01:39.163Z",
+    "time_update": "2024-08-22T19:01:39.163Z",
+    "slug": "preobrazovatel-davleniya",
+    "cat": 2,
+    "photo": "photos/2024/08/22/преобразователь_давления_котла__1.jpg"
+  }
+},
+{
+  "model": "equipment.equipment",
+  "pk": 5,
+  "fields": {
+    "title": "Клапан предохранительный (2)",
+    "place": "Автоклав № 1",
+    "description": "Клапан предохранительный.\r\nДиаметр Ду 80,  давление срабатывания 16кгс.см2",
+    "time_create": "2024-08-22T21:45:24.287Z",
+    "time_update": "2024-08-27T10:44:03.526Z",
+    "slug": "klapan-predohranitelnyj",
+    "cat": 5,
+    "photo": "photos/2024/08/23/сппк_ду_80.jpg"
+  }
+},
+{
+  "model": "equipment.equipment",
+  "pk": 6,
+  "fields": {
+    "title": "Котел № 1",
+    "place": "Котельная",
+    "description": "Котел паровой.\r\nПроизводительность 10т/ч\r\nРазрешенное давление 15кгс/см2",
+    "time_create": "2024-08-22T21:49:02.330Z",
+    "time_update": "2024-08-22T21:49:02.330Z",
+    "slug": "kotel-1",
+    "cat": 7,
+    "photo": "photos/2024/08/23/котел__1.jpg"
+  }
+},
+{
+  "model": "equipment.equipment",
+  "pk": 7,
+  "fields": {
+    "title": "Клапан Fleck 3150 (1)",
+    "place": "ХВО",
+    "description": "Клапан управления фильтром осветления воды.",
+    "time_create": "2024-08-22T21:53:44.326Z",
+    "time_update": "2024-08-27T08:56:48.789Z",
+    "slug": "klapan-fleck-3150-1",
+    "cat": 5,
+    "photo": "photos/2024/08/23/fleck_3150.jpg"
+  }
+},
+{
+  "model": "equipment.equipment",
+  "pk": 8,
+  "fields": {
+    "title": "Котел № 2",
+    "place": "Котельная",
+    "description": "Котел паровой.\r\nПроизводительность 10т/ч\r\nРазрешенное давление 15кгс/см2",
+    "time_create": "2024-08-27T08:41:22.851Z",
+    "time_update": "2024-08-27T08:41:40.048Z",
+    "slug": "kotel-2",
+    "cat": 7,
+    "photo": "photos/2024/08/27/котел__1.jpg"
+  }
+},
+{
+  "model": "equipment.equipment",
+  "pk": 9,
+  "fields": {
+    "title": "Клапан Fleck 3150 (2)",
+    "place": "Котельная",
+    "description": "Клапан управления фильтром осветления воды.",
+    "time_create": "2024-08-27T08:42:56.193Z",
+    "time_update": "2024-08-27T08:56:40.572Z",
+    "slug": "klapan-fleck-3150-2",
+    "cat": 5,
+    "photo": "photos/2024/08/27/fleck_3150.jpg"
+  }
+},
+{
+  "model": "equipment.equipment",
+  "pk": 10,
+  "fields": {
+    "title": "Калапан газовый (1)",
+    "place": "ГРУ котла № 1",
+    "description": "Двойной электромагнитный клапан Dungs DMV-D 507/11\r\n\r\nОсновные параметры\r\n\r\nМаксимальное давление: 500 мбар.\r\nКласс «А», 2-ая группа согласно EN 161.\r\nРабочая среда: сухие газы (нейтральные, 1-3 сем.).\r\nТемпература эксплуатации: от -15 до +60 °C.\r\nСоединение – резьбовое Rp 3/4\".\r\nРасход газа при перепаде Dp=10 мбар: 24 м3/ч.\r\nНапряжение сети: 24-240 Вольт.",
+    "time_create": "2024-08-27T09:02:18.160Z",
+    "time_update": "2024-08-27T09:07:35.587Z",
+    "slug": "kalapan-gazovyj-1",
+    "cat": 5,
+    "photo": "photos/2024/08/27/клапан_dungs.webp"
+  }
+},
+{
+  "model": "equipment.equipment",
+  "pk": 11,
+  "fields": {
+    "title": "Клапан предохранительный (2)",
+    "place": "Автоклав № 2",
+    "description": "Клапан предохранительный",
+    "time_create": "2024-08-27T10:43:32.433Z",
+    "time_update": "2024-08-27T10:43:32.433Z",
+    "slug": "klapan-predohranitelnyj-2",
+    "cat": 5,
+    "photo": "photos/2024/08/27/сппк_ду_80.jpg"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "котельная",
+    "slug": "kotelnya"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "автоклавы",
+    "slug": "avtoklavy"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "газовое хозяйство",
+    "slug": "gazovoe-hozyastvo"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "хво",
+    "slug": "hvo"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 5,
+  "fields": {
+    "name": "вспомогательное оборудование",
+    "slug": "vspomogatrlnoe-oborudovanie"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 1,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 2,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 3,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 2
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 4,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 5,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 6,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 6
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 8,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 8
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 10,
+  "fields": {
+    "tag": 4,
+    "content_type": 7,
+    "object_id": 9
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 11,
+  "fields": {
+    "tag": 4,
+    "content_type": 7,
+    "object_id": 7
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 19,
+  "fields": {
+    "tag": 3,
+    "content_type": 7,
+    "object_id": 10
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 20,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 11
+  }
+}
+]

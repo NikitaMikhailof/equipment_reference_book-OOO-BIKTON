@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+Поиск
+{% endblock title %}
+
+{% block sidebar %}
+<a href="{% url 'post_search' %}"><img src="{% static 'equipment/images/search.png' %}" class="search-img"></a>
+<p class="total-sum-equipment">Найдено позиций: {{ results.count }}</p>
+{% endblock sidebar %}
+
+{% block content %}
+    {% if query %}
+        <h2><i>Оборудование по  запросу: "{{ query }}"</i></h2>
+        <h3>{% with results.count as total_results %}
+        Найдено: {{ total_results }} шт {% endwith %}
+        </h3>
+        {% for post in results %}
+            <div class="wrapper-elem">
+                <div id="mytext">
+                <a href="{{ post.get_absolute_url }}">{{ post.title }}</a><br>
+                <p>{{ post.description|truncatewords:5 }}</p>
+                <p><b>место установки :</b> {{ post.place|truncatewords:4 }}</p>
+                </div>
+                <div id="search-img-elem"><img src="{{post.photo.url}}"></div>
+            </div>
+            <br><br>
+        {% empty %}    
+        <p>По вашему запросу ничего не найдено</p>
+        {% endfor %}
+        <a href="{% url 'post_search' %}" class="search-again">Поиск заново</a><br><br>
+    {% else %}
+        <h1>Поиск  оборудования</h1>
+        <form method="get" class="example">
+            {{ form.as_p }}
+            <input type="submit" value="Поиск">
+        </form>
+    {% endif %}        
+{% endblock content %}
+

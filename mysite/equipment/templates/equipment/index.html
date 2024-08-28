@@ -1,11 +1,14 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}
 {{title}}
 {% endblock title %}
 
 {% block sidebar %}
+<a href="{% url 'post_search' %}"><img src="{% static 'equipment/images/search.png' %}" class="search-img"></a>
 <p class="total-sum-equipment">Всего позиций: {{ count }}</p>
+
 {% endblock sidebar %}
 
 {% block content %}

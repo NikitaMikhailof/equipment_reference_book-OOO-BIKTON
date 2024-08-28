@@ -1,14 +1,37 @@
 from django.shortcuts import render, HttpResponse, get_object_or_404
 from . models import Category, Equipment
 from taggit.models import Tag
-from django.core.paginator import Paginator
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView
+from django.db.models import Count
+from . forms import SearchForm
+from django.contrib.postgres.search import TrigramSimilarity
+
+
+
+def post_search(request):
+    form = SearchForm()
+    query = None
+    results = []
+
+    if 'query' in request.GET:
+        form = SearchForm(request.GET)
+        if form.is_valid():
+            query = form.cleaned_data['query']
+            results = Equipment.objects.annotate(similarity=TrigramSimilarity('title', query)) \
+                                       .filter(similarity__gte=0.1).order_by('-similarity')
+    return render(request,
+                 'equipment/search.html',
+                 {'form': form,
+                 'query': query,
+                 'results': results
+                 })
 
 
 
 class PostListView(ListView):
     queryset = Equipment.objects.all()
-    count = queryset.count()
+    count = Equipment.objects.count()
     context_object_name = 'posts'
     paginate_by = 4
     template_name = 'equipment/index.html'
@@ -32,12 +55,16 @@ def show_post(request, post_slug):
 def show_posts_category(request, cat_slug):
     c = get_object_or_404(Category, slug=cat_slug)
     posts_list = Equipment.objects.filter(cat__slug=cat_slug) 
-    count = posts_list.count()
     paginator = Paginator(posts_list, 4)
     page_number = request.GET.get('page', 1)
-    posts = paginator.page(page_number)
+    try:
+        posts = paginator.page(page_number)
+    except PageNotAnInteger:
+        posts = paginator.page(1)    
+    except EmptyPage:
+        posts = paginator.page(paginator.num_pages)
     data = {'title': c.title,
-            'count': count,
+            'total': posts_list.count(),
             'cats': Category.objects.all(),
             'posts': posts} 
     return render(request, 'equipment/show_posts_category.html', context=data)
@@ -47,12 +74,16 @@ def show_posts_category(request, cat_slug):
 def show_posts_tags(request, tag_slug):
     t = get_object_or_404(Tag, slug=tag_slug)
     posts_list = Equipment.objects.filter(tags__slug=tag_slug)
-    count = posts_list.count()
     paginator = Paginator(posts_list, 4)
     page_number = request.GET.get('page', 1)
-    posts = paginator.page(page_number)
+    try:
+        posts = paginator.page(page_number)
+    except PageNotAnInteger:
+        posts = paginator.page(1)    
+    except EmptyPage:
+        posts = paginator.page(paginator.num_pages)   
     data = {'title': t.name,
-            'count': count,
+            'total': posts_list.count(),
             'cats': Category.objects.all(),
             'posts': posts} 
     return render(request, 'equipment/show_posts_category.html', context=data)

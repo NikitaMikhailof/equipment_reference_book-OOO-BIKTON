@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'equipment.apps.EquipmentConfig',
     'django_extensions',
     'taggit',
+    'django.contrib.postgres',
 ]
 
 MIDDLEWARE = [
@@ -83,6 +84,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'equipment',
+        'USER': 'equioment',
+        'PASSWORD': 'chester1991',
     }
 }
 

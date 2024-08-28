@@ -10,6 +10,11 @@
     vertical-align: middle;
 }
 
+.search-img {
+    width: 35px;
+    height: 35px;
+}
+
 .sidenav {
     height: 100%;
     width: 250px;
@@ -92,19 +97,19 @@
 
 
 /* Стили поля поиска */
+
+
 form.example input[type=text] {
-  padding: 10px 10px 10px 40px;
-  font-size: 15px;
-  display: inline-block;
-  width: 80%;
-  background: #f8f5f5;
-  
-}
-
-
+    padding: 10px 10px 10px 40px;
+    font-size: 15px;
+    display: inline-block;
+    width: 80%;
+    background: #f8f5f5; 
+    border-radius: 10px;
+  }
 
 /* Стили кнопки отправки данных */
-form.example button {
+form.example input[type=submit] {
 padding: 10px 10px 10px 10px;
 display: inline-block;
 width: 15%;
@@ -114,9 +119,10 @@ color: white;
 font-size: 15px;
 border-left: none; /* Удаляем двойную рамку */
 cursor: pointer;
+border-radius: 10px;
 }
 
-form.example button:hover {
+form.example input[type=submit]:hover {
   background:rgb(4, 72, 4);
 }
 
@@ -257,3 +263,58 @@ img.img-article-left {
   .previous:hover {
     background:rgb(52, 18, 145);
   }
+
+
+
+
+
+
+/* НАЧАЛО SEARCH.HTML */
+
+.search-again {
+    position: relative;
+    left: 40%;
+    transform: translate(-50%, 0);
+    align-items:center;
+    background-color: #6365ce;
+    color: rgb(245, 240, 240);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+
+.search-again:hover {
+    background:rgb(52, 18, 145);
+  }
+  
+.wrapper-elem {
+    text-align: center;
+}
+#mytext {
+    display: inline-flex;
+    width: 700px;
+    height: 200px;
+    border: 3px solid rgb(7, 71, 156);
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    font-size: 20px;
+    font-weight: 500px;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    
+}
+
+#search-img-elem {
+    display: inline-block;
+    vertical-align: top;
+    width: 90px;
+    height: 90px;
+    background-color: dimgrey;
+    border-radius: 8px;
+}
+/* КОНЕЦ SEARCH.HTML */
