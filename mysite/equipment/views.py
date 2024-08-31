@@ -3,12 +3,14 @@ from . models import Category, Equipment
 from taggit.models import Tag
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView
-from django.db.models import Count
 from . forms import SearchForm
 from django.contrib.postgres.search import TrigramSimilarity
 
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
+@login_required(login_url='/account/login')
 def post_search(request):
     form = SearchForm()
     query = None
@@ -28,8 +30,8 @@ def post_search(request):
                  })
 
 
-
-class PostListView(ListView):
+class PostListView(LoginRequiredMixin,ListView):
+    login_url = '/account/login'
     queryset = Equipment.objects.all()
     count = Equipment.objects.count()
     context_object_name = 'posts'
@@ -42,7 +44,7 @@ class PostListView(ListView):
     }
 
 
-
+@login_required(login_url='/account/login')
 def show_post(request, post_slug):
     post = get_object_or_404(Equipment, slug=post_slug)
     data = {'title': post.title,
@@ -51,7 +53,7 @@ def show_post(request, post_slug):
     return render(request, 'equipment/post.html', context=data)
 
 
-
+@login_required(login_url='/account/login')
 def show_posts_category(request, cat_slug):
     c = get_object_or_404(Category, slug=cat_slug)
     posts_list = Equipment.objects.filter(cat__slug=cat_slug) 
@@ -70,7 +72,7 @@ def show_posts_category(request, cat_slug):
     return render(request, 'equipment/show_posts_category.html', context=data)
 
 
-
+@login_required(login_url='/account/login')
 def show_posts_tags(request, tag_slug):
     t = get_object_or_404(Tag, slug=tag_slug)
     posts_list = Equipment.objects.filter(tags__slug=tag_slug)

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Авторизация{% endblock %}
+{% block content %}
+    <h1>Авторизация</h1>
+    <p>Заполните форму для входа в систему:</p>
+    {% if form.errors %}
+        <p>Неверная пара логин/пароль Попробуйте снова.</p>
+    {% endif %}
+    <form action="{% url 'account:login_user' %}" method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <p><input type="submit" value="Войти" class="submit"></p>
+    </form> 
+{% endblock content %}    

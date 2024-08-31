@@ -1,5 +1,6 @@
 <div class="pagination">
     <span class="step-links">
+    {% if page.has_other_pages %}    
       {% if page.has_previous %}
         <a href="?page={{ page.previous_page_number }}" class="previous">Предыдущая</a>
       {% endif %}
@@ -9,5 +10,6 @@
       {% if page.has_next %}
         <a href="?page={{ page.next_page_number }}" class="next">Следующая</a>
       {% endif %}
+    {% endif %}  
     </span>
 </div>
