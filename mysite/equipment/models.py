@@ -2,6 +2,23 @@ from django.db import models
 from django.urls import reverse
 from taggit.managers import TaggableManager
 from django.db.models import ImageField
+from django.contrib.auth.models import User
+
+
+class Comment(models.Model):
+    post = models.ForeignKey('Equipment', on_delete=models.CASCADE, related_name='comments')
+    name = models.CharField(max_length=255, verbose_name='имя')
+    body = models.TextField(verbose_name='комментарий')
+    time_create = models.DateTimeField(auto_now_add=True)
+ 
+    class Meta:
+        verbose_name = 'Комментарий'
+        verbose_name_plural = 'Комментарии'
+        ordering = ['time_create']
+        indexes = [models.Index(fields=['-time_create'])]
+
+    def __str__(self):
+        return f'Comment by {self.name} on {self.post}'
 
 
 class Category(models.Model):
@@ -11,15 +28,14 @@ class Category(models.Model):
     class Meta:
         verbose_name = 'Категория'
         verbose_name_plural = 'Категории'
+        
     
     def __str__(self):
         return self.title
 
 
 class Equipment(models.Model):
-
     tags = TaggableManager(verbose_name='теги')
-
     title = models.CharField(max_length=255, verbose_name='название')
     place = models.CharField(max_length=255, blank=True, verbose_name='место установки')
     description = models.TextField(blank=True, verbose_name='описание')
@@ -44,19 +60,7 @@ class Equipment(models.Model):
         return reverse('post', kwargs={'post_slug':self.slug})
     
 
-
-# class Comment(models.Model):
-#     post = models.ForeignKey('Equipment', on_delete=models.CASCADE,related_name='comments')
-#     user = models.ForeignKey('')
-#     body = models.TextField()
-#     created = models.DateTimeField(auto_now_add=True)
-
-#     class Meta:
-#         ordering = ['created']
-#         indexes = [ models.Index(fields=['created'])]
-
-#     def __str__(self):
-#         return f'Comment by {self.name} on {self.post}'    
+ 
 
 
 

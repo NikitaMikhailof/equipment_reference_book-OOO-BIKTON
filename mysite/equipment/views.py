@@ -1,14 +1,14 @@
 from django.shortcuts import render, HttpResponse, get_object_or_404
-from . models import Category, Equipment
+from . models import Category, Equipment, Comment
 from taggit.models import Tag
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView
-from . forms import SearchForm
+from . forms import SearchForm, CommentForm
 from django.contrib.postgres.search import TrigramSimilarity
 
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-
+from django.views.decorators.http import require_POST
 
 @login_required(login_url='/account/login')
 def post_search(request):
@@ -44,12 +44,37 @@ class PostListView(LoginRequiredMixin,ListView):
     }
 
 
+
+@require_POST
+def post_comment(request, post_slug):
+    post = get_object_or_404(Equipment, slug=post_slug)
+    comment = None
+    # Комментарий был отправлен
+    form = CommentForm(data=request.POST)
+    if form.is_valid():
+        # Создать объект класса Comment, не сохраняя его в базе данных
+        comment = form.save(commit=False)
+        # Назначить пост комментарию
+        comment.post = post
+        # Сохранить комментарий в базе данных
+        comment.save()
+    return render(request, 'equipment/comment.html',
+                {'post': post,
+                'form': form,
+                'comment': comment})
+
+
+
 @login_required(login_url='/account/login')
 def show_post(request, post_slug):
     post = get_object_or_404(Equipment, slug=post_slug)
+    comments = post.comments.all()
+    form = CommentForm()
     data = {'title': post.title,
             'cats': Category.objects.all(),
-            'post': post}
+            'comments': comments,
+            'post': post,
+            'form': form}
     return render(request, 'equipment/post.html', context=data)
 
 

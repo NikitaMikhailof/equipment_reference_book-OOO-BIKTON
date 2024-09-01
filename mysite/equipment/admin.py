@@ -1,9 +1,16 @@
 from django.contrib import admin
-from . models import Equipment, Category
+from . models import Equipment, Category, Comment
 from django.utils.safestring import mark_safe
 
 
 admin.site.site_header = 'Панель администрирования'
+
+
+@admin.register(Comment)
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ['name', 'body', 'time_create']
+    list_filter = ['name', 'time_create']
+    search_fields = ['name', 'time_create', 'body']
 
 
 @admin.register(Equipment)

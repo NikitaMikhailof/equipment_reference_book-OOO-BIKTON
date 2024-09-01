@@ -24,9 +24,11 @@
         {% for post in results %}
             <div class="wrapper-elem">
                 <div id="mytext">
-                <a href="{{ post.get_absolute_url }}">{{ post.title }}</a><br>
-                <p>{{ post.description|truncatewords:5 }}</p>
-                <p><b>место установки :</b> {{ post.place|truncatewords:4 }}</p>
+                    <ul>
+                        <li><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
+                        <li><p>{{ post.description|truncatewords:5 }}</li>
+                        <li><p><b>место установки :</b> {{ post.place|truncatewords:4 }}</li>
+                    </ul>
                 </div>
                 <div id="search-img-elem"><img src="{{post.photo.url}}"></div>
             </div>

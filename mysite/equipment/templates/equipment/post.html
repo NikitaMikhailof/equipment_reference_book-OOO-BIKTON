@@ -22,6 +22,21 @@
         <p><strong>категория оборудования: </strong>{{ post.cat}}</p>
         <p><strong>описание: </strong>{{ post.description }}</p> 
     </div><br><br>
+    {% with comments.count as total_comments %}
+        <h2>Комментарии: {{ total_comments }}</h2>
+    {% endwith %}
+    {% for comment in comments %}
+    <div class="comment">
+        <p class="info">
+         {{ comment.name }} {{ comment.time_create }}
+        </p>
+        {{ comment.body|linebreaks }}
+    </div>
+    {% empty %}
+    <p>Комментариев нет</p>
+    {% endfor %}<br><br>
+    {% include "equipment/includes/comment_form.html" %}
+    <br><br>
     <a href="{% url 'home' %}" class="button-main-page">На главную</a>
     <br><br>
 </div>
