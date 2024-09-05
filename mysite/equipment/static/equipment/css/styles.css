@@ -11,14 +11,15 @@
 }
 
 #name {
+    width: 250px;
     position:absolute;
     padding: 10px;
-    bottom: 0;
+    bottom: 0; 
     color: #dbcfcf;
-    display: inline-block;
+    display: block;
     text-align: center;
     font-size: 20px;
-    background-color: #828563;
+    background-color: green;
 }
 .search-img {
     width: 35px;
@@ -57,6 +58,11 @@
     color: #f1f1f1;
   }
   
+.sidenav li {
+    color: #c9cbcc;
+    font-size: 13px;
+}
+
   /* Основной контент */
   .content {
     margin-left: 250px; /* Такая же ширина, как у бокового меню */
@@ -335,10 +341,25 @@ img.img-article-left {
 
 
 /* НАЧАЛО LOGIN.HTML */
+.form-control-login {
+    width: 250px;
+    height: 30px;
+}
+
+.form-label-login {
+    display: block;
+}
+
+.message-error {
+    color: red;
+    background-color: #828563;
+}
+
 .submit {
     width: 250px;
     height: 40px;
-    background-color: rgb(40, 187, 40);
+    background-color: rgb(36, 177, 36);
+    border: rgb(36, 177, 36);
     text-align: center;
     color: white;
     font-size: 16px;
@@ -359,17 +380,25 @@ img.img-article-left {
 }
 .comment .info {
     font-weight:bold;
-    font-size: 15px;
+    font-size: 17px;
     color:#231b68;
 }
 
+
+h3 {
+    color: #120b53;
+}
+
 .add-comment {
-    background-color: #6365ce;
+    background-color: #4468ac;
     color: rgb(245, 240, 240);
+    border-radius: 5px;
     text-decoration: none;
-    font-size: 16px;
-    display: inline-block;
+    text-align: center;
     padding: 8px 16px;
+    font-size: 16px;
+    border: #4468ac;
+
   }
 
   .add-comment:hover {
@@ -388,5 +417,16 @@ img.img-article-left {
 
 .comment-save:hover{
     background:green;
+}
+
+.form-control {
+    width: 300px;
+    height: 100px;
+    font-size: 18px;
+}
+
+.form-label {
+    display: block;
+    
 }
 /* конец comments */

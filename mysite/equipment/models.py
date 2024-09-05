@@ -14,11 +14,11 @@ class Comment(models.Model):
     class Meta:
         verbose_name = 'Комментарий'
         verbose_name_plural = 'Комментарии'
-        ordering = ['time_create']
+        ordering = ['-time_create']
         indexes = [models.Index(fields=['-time_create'])]
 
     def __str__(self):
-        return f'Comment by {self.name} on {self.post}'
+        return f'Комментарий {self.name} к {self.post}'
 
 
 class Category(models.Model):

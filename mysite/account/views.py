@@ -17,9 +17,15 @@ def user_login(request):
                     login(request, user)
                     return HttpResponseRedirect(reverse('home'))
                 else:
-                    return HttpResponse('Disabled account')
+                    form.add_error(None, 'Аккаунт пользователя неактивен')
+                    # form.errors = {'name': ['Аккаунт пользователя не активен']}
+                    # return render(request, 'account/login.html', {'form': form})
+                    # return HttpResponse('Аккаунт не активен')
             else:
-                return HttpResponse('Invalid login')
+                form.add_error(None, 'Неверная пара логин/пароль')
+                # return HttpResponse('Invalid login')
+                # form.errors = {'name': ['неверная пара логин/пароль']}
+                # return render(request, 'account/login.html', {'form': form})
     else:
         form = LoginForm()
     return render(request, 'account/login.html', {'form': form})

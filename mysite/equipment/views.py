@@ -1,14 +1,14 @@
-from django.shortcuts import render, HttpResponse, get_object_or_404
-from . models import Category, Equipment, Comment
-from taggit.models import Tag
+from django.shortcuts import render, get_object_or_404
+from . models import Category, Equipment
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView
 from . forms import SearchForm, CommentForm
 from django.contrib.postgres.search import TrigramSimilarity
-
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.decorators.http import require_POST
+from taggit.models import Tag
+
 
 @login_required(login_url='/account/login')
 def post_search(request):
@@ -44,23 +44,19 @@ class PostListView(LoginRequiredMixin,ListView):
     }
 
 
-
+@login_required(login_url='/account/login')
 @require_POST
 def post_comment(request, post_slug):
     post = get_object_or_404(Equipment, slug=post_slug)
     comment = None
-    # Комментарий был отправлен
-    form = CommentForm(data=request.POST)
+    form = CommentForm(request, data=request.POST)
     if form.is_valid():
-        # Создать объект класса Comment, не сохраняя его в базе данных
         comment = form.save(commit=False)
-        # Назначить пост комментарию
         comment.post = post
-        # Сохранить комментарий в базе данных
         comment.save()
     return render(request, 'equipment/comment.html',
-                {'post': post,
-                'form': form,
+                {'form': form,
+                'post': post,
                 'comment': comment})
 
 
@@ -69,7 +65,7 @@ def post_comment(request, post_slug):
 def show_post(request, post_slug):
     post = get_object_or_404(Equipment, slug=post_slug)
     comments = post.comments.all()
-    form = CommentForm()
+    form = CommentForm(request)
     data = {'title': post.title,
             'cats': Category.objects.all(),
             'comments': comments,
