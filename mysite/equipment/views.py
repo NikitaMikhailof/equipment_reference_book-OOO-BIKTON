@@ -4,11 +4,12 @@ from taggit.models import Tag
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView
 from . forms import SearchForm, CommentForm
-from django.contrib.postgres.search import TrigramSimilarity
-
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.decorators.http import require_POST
+from django.db.models import Q
+
+
 
 @login_required(login_url='/account/login')
 def post_search(request):
@@ -20,8 +21,8 @@ def post_search(request):
         form = SearchForm(request.GET)
         if form.is_valid():
             query = form.cleaned_data['query']
-            results = Equipment.objects.annotate(similarity=TrigramSimilarity('title', query)) \
-                                       .filter(similarity__gte=0.1).order_by('-similarity')
+            results = Equipment.objects.filter(Q(title__icontains=query) | Q(title__iregex=query))
+
     return render(request,
                  'equipment/search.html',
                  {'form': form,
@@ -69,13 +70,14 @@ def post_comment(request, post_slug):
 def show_post(request, post_slug):
     post = get_object_or_404(Equipment, slug=post_slug)
     comments = post.comments.all()
-    form = CommentForm()
+    form = CommentForm(request)
     data = {'title': post.title,
             'cats': Category.objects.all(),
             'comments': comments,
             'post': post,
             'form': form}
     return render(request, 'equipment/post.html', context=data)
+
 
 
 @login_required(login_url='/account/login')

@@ -5,21 +5,6 @@ from django.db.models import ImageField
 from django.contrib.auth.models import User
 
 
-class Comment(models.Model):
-    post = models.ForeignKey('Equipment', on_delete=models.CASCADE, related_name='comments')
-    name = models.CharField(max_length=255, verbose_name='имя')
-    body = models.TextField(verbose_name='комментарий')
-    time_create = models.DateTimeField(auto_now_add=True)
- 
-    class Meta:
-        verbose_name = 'Комментарий'
-        verbose_name_plural = 'Комментарии'
-        ordering = ['time_create']
-        indexes = [models.Index(fields=['-time_create'])]
-
-    def __str__(self):
-        return f'Comment by {self.name} on {self.post}'
-
 
 class Category(models.Model):
     title = models.CharField(max_length=255, db_index=True, verbose_name='название')
@@ -62,5 +47,19 @@ class Equipment(models.Model):
 
  
 
+class Comment(models.Model):
+    post = models.ForeignKey('Equipment', on_delete=models.CASCADE, related_name='comments')
+    name = models.CharField(max_length=255, verbose_name='имя')
+    body = models.TextField(verbose_name='комментарий')
+    time_create = models.DateTimeField(auto_now_add=True)
+ 
+    class Meta:
+        verbose_name = 'Комментарий'
+        verbose_name_plural = 'Комментарии'
+        ordering = ['-time_create']
+        indexes = [models.Index(fields=['-time_create'])]
+
+    def __str__(self):
+        return f'Комментарий {self.name} к {self.post}'
 
 
