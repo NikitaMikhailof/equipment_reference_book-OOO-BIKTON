@@ -3,7 +3,7 @@
 {% block content %}
     {% if comment %}
       <h2><i>Комментарий успешно отправлен</i></h2>
-      <p><a href="{{ post.get_absolute_url }}" class="comment-save">Перейти к оборудованию</a></p>
+      <p><a href="{{ post.get_absolute_url }}" class="comment-save">Перейти к комментариям</a></p>
     {% else %}
       {% include 'equipment/includes/comment_form.html' %}
     {% endif %}

@@ -36,9 +36,17 @@
             <a href="{% url 'show_posts_tags' tag.slug %}">{{ tag }}</a>
         {% endfor %}
     </div>
-    <br><br>
+    <button class="dropdown-btn">комментарии 
+        <i class="fa fa-caret-down"></i>
+        </button>
+    <div class="dropdown-container">
+       {% get_most_commented_posts as most_commented_posts %}
+        {% for comment in most_commented_posts %}
+            <a href="{{ comment.post.get_absolute_url }}">{{ comment.body|truncatewords:3 }}</a>
+        {% endfor %}
+    </div><br>
     {% block sidebar %}
-        
+    
     {% endblock sidebar %}
 </div>
 <div class="content">

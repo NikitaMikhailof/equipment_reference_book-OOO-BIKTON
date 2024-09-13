@@ -1,18 +1,8 @@
-<!-- <form action="{% url 'post_comment' post.slug %}" method="post">
+<form action="{% url 'post_comment' post.slug %}" method="post">
     {{ form.as_p }}
     {% csrf_token %}
     <p><input type="submit" value="Добавить комментарий" class="add-comment"></p>
-</form> -->
-
-<form action="{% url 'post_comment' post.slug %}" method="post">
-    {% csrf_token %}
-    {% for field in form %}
-        {% if field.name in 'name' %}
-            <label for="{{ field.name }}">{{ field.label }}</label>
-            <input  type="text" placeholder="{{ request.user.first_name }} {{ request.user.last_name }} " value="{{ request.user.first_name }} {{ request.user.last_name }} " disabled="True"><br><br>
-        {% else %}  
-            {{ field }}
-        {% endif %}
-    {% endfor %}
-    <p><input type="submit" value="Добавить комментарий" class="add-comment"></p>
 </form>
+
+
+
