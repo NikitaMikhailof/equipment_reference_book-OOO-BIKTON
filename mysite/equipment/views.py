@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from . models import Category, Equipment
+from . models import Category, Equipment, Tag
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView
 from . forms import SearchForm, CommentForm
